@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: "Manrope", "sans-serif", "Arial"; */
+  font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-x: clip;
+  display: flow-root;
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+.custom-select-box {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea {
+  transition: all 0.2s linear;
+}
+
+button {
+  transition: all 0.1s linear;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.section {
+  @apply container mx-auto;
+}
+
+/* For customized scroll */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008183;
+  border-radius: 5px;
+}
+
+.select-dropdown::-webkit-scrollbar-thumb {
+  background: #ced1db;
+  border-radius: 5px;
+}
+
+.select-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.lite-scrollbar::-webkit-scrollbar-thumb {
+  background: #e7e7f1;
+  border-radius: 3px;
+}
+
+.lite-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.spin-button-none::-webkit-outer-spin-button,
+.spin-button-none::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #339a9c !important;
+}
+
+.swiper-scrollbar {
+  display: block !important;
+  height: 6px;
+  width: 10%;
+  background-color: #eee;
+  border-radius: 99px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: #d5d5d5;
+}
+.swiper-scrollbar-drag {
+  background-color: #339a9c !important;
+  height: 100%;
+  border-radius: 99px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-pagination-bullets {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-scrollbar {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+  html {
+    font-size: 87.5%; /* 14px is 87.5% of 16px (assuming 16px as the base size) */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin-top: 4.5rem;
+  }
+}
+
+/* @media (hover: none) {
+  *:hover {
+    color: initial !important;
+  }
+  *::selection {
+    color: initial !important;
+  }
+  *:active {
+    color: initial !important;
+  }
+} */
+
+.do-text-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
